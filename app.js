@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateWishlistSummary();
     renderCart();
     updateCartCount();
+    initCheckoutButton();
     initFirebaseAuth();
     initSignupForm();
     initLoginForm();
@@ -413,6 +414,24 @@ function initLoginForm() {
 }
 
 // Contact form submit handler
+function initCheckoutButton() {
+    const checkoutBtn = document.querySelector('.checkout-btn');
+    if (!checkoutBtn) return;
+
+    checkoutBtn.addEventListener('click', () => {
+        const cart = getCart();
+        if (cart.length === 0) {
+            alert('Your cart is empty!');
+            return;
+        }
+        const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        alert(`Order placed successfully!\\nTotal: ${formatPrice(Math.round(total))}\\nThank you for shopping!`);
+        localStorage.removeItem('cart');
+        renderCart();
+        updateCartCount();
+    });
+}
+
 function initContactForm() {
     var contactForm = document.querySelector('.contact-form');
     var contactButton = contactForm ? contactForm.querySelector('button[type="submit"]') : null;
