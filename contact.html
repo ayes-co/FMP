@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Outfitters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    
+</head>
+<body>
+    
+    <header class="navbar">
+        <div class="logo">Outfitters</div>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./trending.html">Trending</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <a href="mywishlist.html">
+                <span><i class="fa-solid fa-heart"></i></span>
+            </a>
+            <a href="add to cart.html">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+            </a>
+            <a href="signup.html">
+                <span><i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <div class="input-box">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-phone"></i>
+                <input type="text" placeholder="Phone Number" required>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-message"></i>
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </div>
+
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p><i class="fa-solid fa-location-dot"></i> 123 Fashion Street, Karachi, Pakistan</p>
+            <p><i class="fa-solid fa-phone"></i> +92 123 456 7890</p>
+            <p><i class="fa-solid fa-envelope"></i> info@outfitters.com</p>
+            <p><i class="fa-solid fa-clock"></i> Mon - Sat: 9AM - 9PM</p>
+            <div class="socials">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Outfitters</h3>
+                <p>Luxury Men's Wear Collection</p>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <p>Shirts</p>
+                <p>Jackets</p>
+                <p>Accessories</p>
+            </div>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <p>Contact</p>
+                <p>Returns</p>
+                <p>FAQs</p>
+            </div>
+            <div class="footer-section">
+                <h4>Subscribe</h4>
+                <input type="email" placeholder="Enter email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Outfitters. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

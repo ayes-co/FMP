@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Outfitters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Outfitters</div>
+
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./trending.html">Trending</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="mywishlist.html">
+                <span><i class="fa-solid fa-heart"></i></span>
+            </a>
+            <a href="add to cart.html">
+                <span><i class="fa-solid fa-cart-shopping"></i></span>
+            </a>
+            <a href="signup.html">
+                <span><i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+    </header>
+
+    <div class="cart-container">
+        <div class="cart-box">
+            <h2>Shopping Cart</h2>
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cartItems">
+                    <tr>
+                        <td colspan="5" style="text-align: center;">Your cart is empty</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="cart-summary">
+                <h3>Cart Summary</h3>
+                <p>Subtotal: <span id="subtotal">Rs. 0</span></p>
+                <p>Tax: <span id="tax">Rs. 0</span></p>
+                <p>Total: <span id="total">Rs. 0</span></p>
+                <button class="checkout-btn">Proceed to Checkout</button>
+                <a href="./shop.html" class="continue-shopping">Continue Shopping</a>
+                <p>Need help? <a href="./contact.html">Contact Us</a></p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Outfitters</h3>
+                <p>Luxury Men's Wear Collection</p>
+            </div>
+            <div class="footer-section">
+                <h4>Shop</h4>
+                <p>Shirts</p>
+                <p>Jackets</p>
+                <p>Accessories</p>
+            </div>
+            <div class="footer-section">
+                <h4>Help</h4>
+                <p>Contact</p>
+                <p>Returns</p>
+                <p>FAQs</p>
+            </div>
+            <div class="footer-section">
+                <h4>Subscribe</h4>
+                <input type="email" placeholder="Enter email">
+                <button>Subscribe</button>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 Outfitters. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
