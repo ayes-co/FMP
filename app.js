@@ -339,8 +339,8 @@ function signUp() {
             return user;
         })
         .then(() => {
-            alert('Account created successfully.');
-            window.location.href = './contact.html';
+            alert('Account created successfully. Please log in.');
+            window.location.href = './login.html';
         })
         .catch((error) => {
             console.log(error.message);
@@ -364,6 +364,11 @@ function signIn() {
     var loginPassInput = document.getElementById('loginPass') || document.getElementById('password');
 
     if (!loginEmailInput || !loginPassInput) {
+        return;
+    }
+
+    if (!loginEmailInput.value.trim() || !loginPassInput.value.trim()) {
+        alert('Please enter your email and password.');
         return;
     }
 
